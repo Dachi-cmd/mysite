@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(Group\ 6\ \(1\).png);
+  font-family: 'Spartan', sans-serif;
+  background-color: #070724;
+  color: white;
+  line-height: 1.6;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.planets-menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 0.9rem;
+}
+
+.main-area {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.planet-layout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.planet-pic img {
+  width: 300px;
+  height: auto;
+}
+
+.planet-info {
+  max-width: 500px;
+}
+
+.planet-info h1 {
+  font-family: 'Antonio', sans-serif;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.planet-info p {
+  font-size: 0.95rem;
+  color: #d1d1d1;
+}
+
+.source {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.source a {
+  color: #bbb;
+  text-decoration: underline;
+}
+
+.tab-list {
+  margin-top: 2rem;
+}
+
+.tab {
+  background: transparent;
+  color: white;
+  border: 1px solid #555;
+  padding: 0.75rem 1rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  width: 100%;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.tab span {
+  margin-right: 1rem;
+  color: #ccc;
+}
+
+.tab.active {
+  background: none;
+  border-color: #555;
+}
+
+.planet-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.stat-box {
+  flex: 1 1 200px;
+  border: 1px solid #444;
+  padding: 1rem;
+}
+
+.stat-title {
+  font-size: 0.75rem;
+  color: #aaa;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.stat-value {
+  font-family: 'Antonio', sans-serif;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 768px) {
+  .planet-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .planet-info h1 {
+    font-size: 3rem;
+  }
+
+  .planet-pic img {
+    width: 200px;
+  }
+
+  .tab {
+    text-align: center;
+  }
+
+  .planet-stats {
+    flex-direction: column;
+  }
+}
