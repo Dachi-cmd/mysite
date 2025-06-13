@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="venus.css">
+    <link rel="stylesheet" href="{% static 'css/venus.css' %}">
     <script src="script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Spartan:wght@400;700&display=swap" rel="stylesheet">
     <title>Document</title>
@@ -13,7 +13,7 @@
       <header class="top-nav">
     <div class="logo">THE PLANETS</div>
     <nav class="planets-menu">
-      <a href="#">MERCURY</a>
+      <a href="index.html">MERCURY</a>
       <a href="#">VENUS</a>
       <a href="#">EARTH</a>
       <a href="#">MARS</a>
@@ -35,10 +35,11 @@
         <p class="source">Source: <a href="" target="_blank">Wikipedia</a></p>
 
         <div class="tab-list">
-          <button class="tab"><span>01</span> OVERVIEW</button>
-          <button class="tab"><span>02</span> INTERNAL STRUCTURE</button>
-          <button class="tab"><span>03</span> SURFACE GEOLOGY</button>
-        </div>
+         <button class="tab" id="overviewTab"><span>01</span> OVERVIEW</button>
+         <button class="tab" id="structureTab"><span>02</span> INTERNAL STRUCTURE</button>
+        <button class="tab" id="surfaceTab"><span>03</span> SURFACE GEOLOGY</button>
+  </div>
+
       </div>
     </div>
 
